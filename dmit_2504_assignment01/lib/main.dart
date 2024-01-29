@@ -1,5 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors, todo
 
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 //https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
@@ -45,13 +47,16 @@ class MyApp extends StatelessWidget {
                     ),
                   )
                 ),
-                Container(
-                  height: 100.0,
-                  width: 100.0,
-                  color: Colors.white,
-                  child: const Center(
-                    child: Text(
-                      "Container 2"
+                Transform.rotate(
+                  angle: pi / 4,
+                  child: Container(
+                    height: 100.0,
+                    width: 100.0,
+                    color: Colors.white,
+                    child: const Center(
+                      child: Text(
+                        "Container 2"
+                      ),
                     ),
                   ),
                 )
