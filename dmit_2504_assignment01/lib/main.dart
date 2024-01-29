@@ -35,7 +35,10 @@ class MyApp extends StatelessWidget {
                 Container(
                   height: 100.0,
                   width: 100.0,
-                  color: Colors.orange,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 3.0),
+                    color: Colors.orange
+                  ),
                   child: const Center(
                     child: Text(
                       'Container 1'
